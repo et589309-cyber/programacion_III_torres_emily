@@ -1,4 +1,4 @@
-let personajes = ["Rick", "Morty", "Summer", "Jerry", "Kevin", "Valdivieso"];
+let personajes = ["Rick", "Morty", "Summer", "Jerry", "Emily", "Torres"];
 
 console.log("Elemento 0", personajes[0]);
 console.log("Elemento 2", personajes[2]);
