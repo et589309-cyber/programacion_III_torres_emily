@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reserva - Venta de vehículos</title>
+</head>
+<body>
+    <h1>Agendar prueba de manejo</h1>
+    <form action="#" method="get">
+    <fieldset>
+    <legend>Datos del cliente</legend>
+    <p>
+    <label for="cliente">Nombre:</label> <input id="cliente" name="cliente" required>
+    </p>
+    <p>
+    <label for="telefono">Teléfono:</label> <input type="tel" id="telefono" name="telefono" required>
+    </p>
+    </fieldset>
+    <fieldset>
+    <legend>Datos de la reserva</legend>
+    <p>
+    <label for="fecha">Fecha:</label> <input type="date" id="fecha" name="fecha" required>
+    </p>
+    <p>
+    <label for="hora">Hora:</label> <input type="time" id="hora" name="hora" required>
+    </p>
+    <p>Tipo de vehículo: <label>
+    <input type="radio" name="tipo" value="nuevo" checked> Nuevo</label> <label>
+    <input type="radio" name="tipo" value="usado"> Usado</label>
+    </p>
+    <p>
+    <label>
+    <input type="checkbox" name="confirmacion" required> Confirmo mi solicitud</label>
+    </p>
+    </fieldset>
+    <button type="submit">Reservar</button> <button type="reset">Cancelar</button>
+    </form>
+    <p>Demostración sin almacenamiento de datos.</p>
+</body>
+</html>
