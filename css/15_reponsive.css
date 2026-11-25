@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 24px; color: #172334; }
+.catalogo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.tarjeta { background: #eaf0f6; padding: 20px; border-radius: 10px; }
+@media (max-width: 768px) { .catalogo { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .catalogo { grid-template-columns: 1fr; } h1 { font-size: 24px; } }

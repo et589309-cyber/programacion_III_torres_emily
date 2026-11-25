@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 24px; color: #172334; }
+.nuevo { background: #123456; color: white; }
+.usado { background: rgb(220,230,240); color: navy; }
+.oferta { background: hsl(45,90%,60%); color: black; }
+p { padding: 15px; }

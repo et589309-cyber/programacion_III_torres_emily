@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; margin: 24px; color: #172334; }
+nav { display: flex; justify-content: space-between; background: navy; color: white; padding: 15px; }
+.catalogo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; }
+.tarjeta { background: #eaf0f6; padding: 15px; }
