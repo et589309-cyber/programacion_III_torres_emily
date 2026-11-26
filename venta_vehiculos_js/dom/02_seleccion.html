@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selección de elementos</title>
+</head>
+<body>
+    <h1 id="titulo">Vehículos</h1>
+    <p class="vehiculo">Toyota Corolla</p>
+    <p class="vehiculo">Kia Sportage</p>
+    <p class="vehiculo">Chevrolet Onix</p>
+
+    <script>
+        // Seleccionar por id
+        let titulo = document.getElementById('titulo');
+        titulo.style.color = 'blue';
+
+        // Seleccionar el primero con querySelector
+        let primero = document.querySelector('.vehiculo');
+        primero.style.color = 'red';
+
+        // Seleccionar todos con querySelectorAll
+        let todos = document.querySelectorAll('.vehiculo');
+        console.log('Cantidad de vehículos:', todos.length);
+    </script>
+</body>
+</html>

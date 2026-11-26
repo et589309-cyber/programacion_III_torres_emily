@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de vehículos</title>
+</head>
+<body>
+    <h1>Lista de vehículos</h1>
+    <input type="text" id="nuevo" placeholder="Nombre del vehículo">
+    <button onclick="agregar()">Agregar</button>
+    <button onclick="eliminar()">Eliminar último</button>
+    <ul id="lista"></ul>
+
+    <script>
+        let vehiculos = ['Toyota Corolla', 'Kia Sportage'];
+
+        function mostrarLista() {
+            let lista = document.getElementById('lista');
+            lista.innerHTML = '';
+            for (let i = 0; i < vehiculos.length; i++) {
+                lista.innerHTML = lista.innerHTML + '<li>' + vehiculos[i] + '</li>';
+            }
+        }
+
+        function agregar() {
+            let nuevo = document.getElementById('nuevo').value;
+            if (nuevo != '') {
+                vehiculos.push(nuevo);
+                document.getElementById('nuevo').value = '';
+                mostrarLista();
+            }
+        }
+
+        function eliminar() {
+            vehiculos.pop();
+            mostrarLista();
+        }
+
+        mostrarLista();
+    </script>
+</body>
+</html>

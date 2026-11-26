@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos</title>
+</head>
+<body>
+    <h1>Cambiar imagen</h1>
+    <img id="foto" src="imagenes/sedan.svg" alt="Sedán" width="250">
+    <br>
+    <button onclick="cambiar()">Ver SUV</button>
+
+    <script>
+        function cambiar() {
+            let foto = document.getElementById('foto');
+            foto.setAttribute('src', 'imagenes/suv.svg');
+            foto.setAttribute('alt', 'SUV');
+        }
+    </script>
+</body>
+</html>

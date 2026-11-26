@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leer un input</title>
+</head>
+<body>
+    <h1>Buscar vehículo</h1>
+    <input type="text" id="modelo" placeholder="Escribe un modelo">
+    <button onclick="mostrar()">Mostrar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrar() {
+            let modelo = document.getElementById('modelo').value;
+            document.getElementById('resultado').textContent = 'Buscaste: ' + modelo;
+        }
+    </script>
+</body>
+</html>
